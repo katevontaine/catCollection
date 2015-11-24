@@ -9,19 +9,19 @@
       $routeProvider
         .when('/', {
           templateUrl: 'views/cats/main.html',
-          controller: 'MainController'
+          controller: 'CatsController'
         })
         .when('/cats', {
           templateUrl: 'views/cats/list.html',
-          controller: 'catController'
+          controller: 'CatsController'
         })
         .when('/cats/:catId', {
           templateUrl: 'views/cats/show.html',
-          controller: 'catController'
+          controller: 'CatsController'
         })
         .when('/cats/:catId/edit', {
           templateUrl: 'views/cats/edit.html',
-          controller: 'catController'
+          controller: 'CatsController'
         })
 
         .when('/404', {

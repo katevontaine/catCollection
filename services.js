@@ -18,7 +18,7 @@
 
       return {
         createCat: addCat,
-        getCat: getCat
+        getCats: getCats
       };
 
     });

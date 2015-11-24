@@ -1,17 +1,19 @@
 (function () {
 
-    angular.module('cats', [])
-        .controller('MainController', ['$scope', function($scope) {
-          $scope.list = [];
-          $scope.text = 'hello';
-          $scope.submit = function() {
-            if ($scope.text) {
-              $scope.cat.push(this.text);
-              $scope.text = '';
-            }
-          };
-        }]);
+    angular
+    .module('cats')
+// .controller('MainController', function ($scope) {
+//
+// })
+.controller('CatsController', function ($scope, CatService) {
 
-
+  CatService.getCats().success(function (cats) {
+    console.log(cats);
+    $scope.cats = cats;
+  });
+  $scope.addCat = function (newCat){
+    CatService.createCat(newCat);
+  }
+})
 
 })();
