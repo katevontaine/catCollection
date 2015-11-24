@@ -1,5 +1,8 @@
 <h3>Let's add a Cat!</h3>
-<input type="text" name="pic" ng-model="newCat.pic" placeholder="pic" value="">
-<input type="text" name="breed" ng-model="newCat.breed" placeholder="breed" value="">
-<input type="text" ng-model="newCat.description" name="description" placeholder="description" value="">
-<button type="button" ng-click="addCat(newCat)" name="button">Add cat</button>
+<form ng-submit="submit()" ng-controller="MainController">
+
+<input type="text" name="pic" ng-model="newCat.pic" placeholder="pic" value=""><br>
+<input type="text" name="breed" ng-model="newCat.breed" placeholder="breed" value=""><br>
+<button type="button" name="button">Add Cat</button>
+</form>
+<pre>cat={{cat}}</pre>

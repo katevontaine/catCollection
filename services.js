@@ -8,7 +8,7 @@
 
       var addCat = function (newCat) {
         $http.post(url, newCat).then(function (res) {
-          console.log(kitty);
+          console.log(newCat);
         });
       };
 

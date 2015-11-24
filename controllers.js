@@ -1,21 +1,17 @@
 (function () {
 
+    angular.module('cats', [])
+        .controller('MainController', ['$scope', function($scope) {
+          $scope.list = [];
+          $scope.text = 'hello';
+          $scope.submit = function() {
+            if ($scope.text) {
+              $scope.cat.push(this.text);
+              $scope.text = '';
+            }
+          };
+        }]);
 
-  angular
-    .module('cats')
-    .controller('MainController', function($scope) {
-      $scope.alertMe = function () {
-          console.log("wheres da catz");
-      };
-    })
-    .controller('catsController', function ($scope, catsService) {
-
-      catsService.getcats().success(function (cats) {
-        console.log(cats);
-        $scope.theCats = cats;
-      });
-
-    });
 
 
 })();

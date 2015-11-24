@@ -21,6 +21,8 @@ h3{
   font-size: 34px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 h4{
   font-family: 'Megrim', cursive;
@@ -45,11 +47,11 @@ footer{
   margin: 0 auto;
   padding: 0;
   height: 50px;
-
+  display: block;
 }
 .theCats{
   background-color: yellow;
-  height: 900px;
+  height: 400px;
   width: 100%;
 }
 input{
@@ -66,4 +68,10 @@ button{
   display: block;
   padding: 10px;
   border-radius: 20%;
+  color: white;
+  background-color: grey;
+  border: none;
+  padding-top: 10px;
+  font-family: 'Megrim', cursive;
+  font-size: 18px;
 }
